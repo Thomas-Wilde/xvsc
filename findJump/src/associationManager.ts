@@ -32,10 +32,10 @@ export class AssociationManager {
       before: {
         contentText: finalLetter,
         margin: '0 5px 0 5px',
-        backgroundColor: '#4169E1',
-        border: '3px solid',
-        color: 'white',
-        borderColor: '#4169E1',
+        backgroundColor: '#8c0688',
+        color: '#FFFFFF',
+        border: '1px solid',
+        borderColor: '#ff2bf1'
       },
     })
 
