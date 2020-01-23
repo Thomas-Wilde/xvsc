@@ -14,10 +14,10 @@ type MatchesArr = Match[]
 
 export class FindJump {
   isActive = false
-  inlineInput: InlineInput
+  inlineInput: InlineInput 
   intervalHandler: any
   userInput: string = ''
-  textEditor: TextEditor
+  textEditor: TextEditor 
   associationManager = new AssociationManager()
   activityIndicatorState = 0
   activatedWithSelection = false
@@ -44,6 +44,10 @@ export class FindJump {
   activateWithSelection = (textEditor: TextEditor) => {
     this.activatedWithSelection = true
     this.activate(textEditor)
+  }
+
+  cancel = (textEditor: TextEditor) => {
+    this.reset()
   }
 
   onInput = (input: string, char: string) => {
